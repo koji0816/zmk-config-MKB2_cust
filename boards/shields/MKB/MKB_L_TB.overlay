@@ -48,3 +48,7 @@
     };
 };
 
+/* Disable I2C0 (auto-enabled by prospector-zmk-module) to avoid instance 0 conflict with SPI0 */
+&i2c0 {
+    status = "disabled";
+};
