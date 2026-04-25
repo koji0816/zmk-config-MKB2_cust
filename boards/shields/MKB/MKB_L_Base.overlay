@@ -105,3 +105,8 @@
         prechargep = <0x22>;
     };
 };
+
+/* Disable SPI0 to avoid instance 0 conflict with I2C0 enabled by prospector-zmk-module */
+&spi0 {
+    status = "disabled";
+};
