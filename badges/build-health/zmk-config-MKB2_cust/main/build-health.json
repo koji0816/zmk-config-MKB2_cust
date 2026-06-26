@@ -2,12 +2,12 @@
   "repository": "koji0816/zmk-config-MKB2_cust",
   "branch": "main",
   "target": "all",
-  "status": "passing",
-  "raw_status": "success",
-  "color": "#2ea44f",
-  "sha": "5a723e005d6890d030ed8b0de88a2303ab5c2ee6",
-  "run_id": "28201356022",
-  "run_number": "8",
-  "run_url": "https://github.com/koji0816/zmk-config-MKB2_cust/actions/runs/28201356022",
-  "generated_at": "2026-06-25T21:33:01Z"
+  "status": "skipped",
+  "raw_status": "skipped",
+  "color": "#6a737d",
+  "sha": "a551da3da33d9f36f2330ada73cb1251fad880e5",
+  "run_id": "28265618951",
+  "run_number": "9",
+  "run_url": "https://github.com/koji0816/zmk-config-MKB2_cust/actions/runs/28265618951",
+  "generated_at": "2026-06-26T21:15:07Z"
 }
