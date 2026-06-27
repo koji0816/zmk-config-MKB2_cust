@@ -1,0 +1,13 @@
+{
+  "repository": "koji0816/zmk-config-MKB2_cust",
+  "branch": "DYAStudioFix",
+  "target": "all",
+  "status": "passing",
+  "raw_status": "success",
+  "color": "#2ea44f",
+  "sha": "7624a05d169d06ddc086bcb7952720448fa177ae",
+  "run_id": "28275502804",
+  "run_number": "10",
+  "run_url": "https://github.com/koji0816/zmk-config-MKB2_cust/actions/runs/28275502804",
+  "generated_at": "2026-06-27T02:23:00Z"
+}
