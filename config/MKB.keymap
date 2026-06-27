@@ -127,6 +127,8 @@
     };
 };
 
-&zip_temp_layer { excluded-positions = <19 20 21 24 36 37 38>; };
+&zip_temp_layer {
+    excluded-positions = <7 8 9 19 21 24 36 37 38>;
+};
 
 &mkp_input_listener { input-processors = <&zip_temp_layer MOUSE 250>; };
