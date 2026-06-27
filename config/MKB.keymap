@@ -63,9 +63,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LEFT_WIN &kp LEFT_SHIFT>,
+                <&kp LG(LEFT_SHIFT)>,
                 <&macro_tap>,
-                <&kp S>;
+                <&kp S>,
+                <&macro_release>,
+                <&kp LG(LEFT_SHIFT)>;
 
             label = "SCREENSHOT";
         };
@@ -94,7 +96,7 @@
 &trans    &kp EXCLAMATION   &kp AT     &kp HASH           &kp DOLLAR      &kp PERCENT      &kp COLON      &macro_1   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH  &trans
 &none     &kp SINGLE_QUOTE  &kp CARET  &kp AMPERSAND      &kp ASTERISK    &kp EQUAL        &kp SEMICOLON  &macro2    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp INT_YEN    &trans
 &trans    &kp TILDE         &kp GRAVE  &kp DOUBLE_QUOTES  &kp UNDERSCORE  &kp PLUS         &kp PIPE       &macro3    &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans         &trans
-&trans    &trans            &kp LALT                      &kp ENTER       &kp ENTER        &kp ENTER      &kp ENTER                        &trans                 &trans         &screenshot
+&trans    &trans            &kp LALT                      &kp ENTER       &kp ENTER        &kp ENTER      &kp ENTER                        &trans                 &trans         &none
 &kp LEFT  &kp UP            &kp SPACE  &kp DOWN           &kp RIGHT                                       &kp HOME   &kp PG_UP             &kp ENTER              &kp PG_DN      &kp END
                                        &kp A                                                                         &kp B
             >;
@@ -136,7 +138,7 @@
 &trans    &trans  &kp F7     &kp F8    &kp F9     &kp F10      &kp LC(C)  &trans    &trans     &trans     &trans     &trans
 &trans    &trans  &kp F4     &kp F5    &kp F6     &kp F11      &kp LC(V)  &none     &none      &none      &trans     &trans
 &trans    &trans  &kp F1     &kp F2    &kp F3     &kp F12      &trans     &trans    &trans     &trans     &trans     &trans
-&trans    &trans  &trans               &trans     &trans       &trans     &trans               &trans     &trans     &trans
+&trans    &trans  &trans               &trans     &trans       &trans     &trans               &trans     &trans     &screenshot
 &kp LEFT  &kp UP  &kp SPACE  &kp DOWN  &kp RIGHT                          &kp HOME  &kp PG_UP  &kp ENTER  &kp PG_DN  &kp END
                              &kp A                                                  &kp B
             >;
