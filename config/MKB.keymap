@@ -36,6 +36,39 @@
 
             label = "IMETOGGLE";
         };
+
+        macro_1: macro_1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT>;
+            label = "MACRO_1";
+        };
+
+        macro2: macro2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT>;
+            label = "MACRO2";
+        };
+
+        macro3: macro3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACE &kp RIGHT_BRACE &kp LEFT>;
+            label = "MACRO3";
+        };
+
+        screenshot: screenshot {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_WIN &kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp S>;
+
+            label = "SCREENSHOT";
+        };
     };
 
     keymap {
@@ -47,7 +80,7 @@
 &kp LANG1                &kp Q     &kp W      &kp E     &kp R        &kp T            &kp Y               &kp U          &kp I      &kp O      &kp P      &kp BACKSPACE
 &lt BT TAB               &kp A     &kp S      &kp D     &kp F        &kp G            &kp H               &kp J          &kp K      &kp L      &kp MINUS  &kp ENTER
 &kp LSHFT                &kp Z     &kp X      &kp C     &kp V        &kp B            &kp N               &kp M          &kp COMMA  &kp DOT    &kp UP     &kp FSLH
-&mt LEFT_CONTROL ESCAPE  &kp LGUI  &kp LALT             &lt 1 LANG2  &lt 4 SPACE      &lt FUNC BACKSPACE  &lt NUM ENTER             &kp LEFT   &kp DOWN   &kp RIGHT
+&mt LEFT_CONTROL ESCAPE  &kp LGUI  &kp LALT             &lt 1 LANG2  &lt 4 SPACE      &lt FUNC BACKSPACE  &lt NUM ENTER             &kp LEFT   &kp DOWN   &mt RIGHT_SHIFT RIGHT
 &kp LEFT                 &kp UP    &kp SPACE  &kp DOWN  &kp RIGHT                                         &kp HOME       &kp PG_UP  &kp ENTER  &kp PG_DN  &kp END
                                               &kp A                                                                      &kp B
             >;
@@ -58,10 +91,10 @@
         function_layer {
             label = "Fnc";
             bindings = <
-&trans    &kp EXCLAMATION   &kp AT     &kp HASH           &kp DOLLAR      &kp PERCENT      &kp COLON      &kp F2     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH  &trans
-&none     &kp SINGLE_QUOTE  &kp CARET  &kp AMPERSAND      &kp ASTERISK    &kp EQUAL        &kp SEMICOLON  &kp F7     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp INT_YEN    &trans
-&trans    &kp TILDE         &kp GRAVE  &kp DOUBLE_QUOTES  &kp UNDERSCORE  &kp PLUS         &kp PIPE       &kp F12    &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans         &trans
-&trans    &trans            &kp LALT                      &kp ENTER       &kp ENTER        &kp ENTER      &kp ENTER                        &trans                 &trans         &trans
+&trans    &kp EXCLAMATION   &kp AT     &kp HASH           &kp DOLLAR      &kp PERCENT      &kp COLON      &macro_1   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH  &trans
+&none     &kp SINGLE_QUOTE  &kp CARET  &kp AMPERSAND      &kp ASTERISK    &kp EQUAL        &kp SEMICOLON  &macro2    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp INT_YEN    &trans
+&trans    &kp TILDE         &kp GRAVE  &kp DOUBLE_QUOTES  &kp UNDERSCORE  &kp PLUS         &kp PIPE       &macro3    &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans         &trans
+&trans    &trans            &kp LALT                      &kp ENTER       &kp ENTER        &kp ENTER      &kp ENTER                        &trans                 &trans         &screenshot
 &kp LEFT  &kp UP            &kp SPACE  &kp DOWN           &kp RIGHT                                       &kp HOME   &kp PG_UP             &kp ENTER              &kp PG_DN      &kp END
                                        &kp A                                                                         &kp B
             >;
@@ -100,12 +133,12 @@
         scroll_layer {
             label = "Scr";
             bindings = <
-&trans    &trans  &kp F7     &kp F8    &kp F9     &kp F10      &trans  &trans    &trans     &trans     &trans     &trans
-&trans    &trans  &kp F4     &kp F5    &kp F6     &kp F11      &trans  &none     &none      &none      &trans     &trans
-&trans    &trans  &kp F1     &kp F2    &kp F3     &kp F12      &trans  &trans    &trans     &trans     &trans     &trans
-&trans    &trans  &trans               &trans     &trans       &trans  &trans               &trans     &trans     &trans
-&kp LEFT  &kp UP  &kp SPACE  &kp DOWN  &kp RIGHT                       &kp HOME  &kp PG_UP  &kp ENTER  &kp PG_DN  &kp END
-                             &kp A                                               &kp B
+&trans    &trans  &kp F7     &kp F8    &kp F9     &kp F10      &kp LC(C)  &trans    &trans     &trans     &trans     &trans
+&trans    &trans  &kp F4     &kp F5    &kp F6     &kp F11      &kp LC(V)  &none     &none      &none      &trans     &trans
+&trans    &trans  &kp F1     &kp F2    &kp F3     &kp F12      &trans     &trans    &trans     &trans     &trans     &trans
+&trans    &trans  &trans               &trans     &trans       &trans     &trans               &trans     &trans     &trans
+&kp LEFT  &kp UP  &kp SPACE  &kp DOWN  &kp RIGHT                          &kp HOME  &kp PG_UP  &kp ENTER  &kp PG_DN  &kp END
+                             &kp A                                                  &kp B
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
