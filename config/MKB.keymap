@@ -139,7 +139,7 @@
 &none       &none         &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans      &none   &none     &kp UP_ARROW  &none      &none      &kp END
 &none       &none         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans      &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &trans     &kp PAGE_UP
 &none       &none         &kp NUMBER_0                &trans        &trans      &trans  &trans                  &trans     &trans     &kp PAGE_DOWN
-&kp K_MUTE  &kp C_VOL_UP  &kp SPACE     &kp C_VOL_DN  &kp K_MUTE                        &kp HOME  &kp PG_UP     &kp ENTER  &kp PG_DN  &kp END
+&kp C_MUTE  &kp C_VOL_UP  &kp SPACE     &kp C_VOL_DN  &kp C_MUTE                        &kp HOME  &kp PG_UP     &kp ENTER  &kp PG_DN  &kp END
                                         &kp A                                                     &kp B
             >;
 
