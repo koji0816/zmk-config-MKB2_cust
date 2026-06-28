@@ -691,7 +691,7 @@ svg.physical-layout { font-family: ui-monospace, SFMono-Regular, Consolas, monos
 </g>
 <g class="key keypos-46 " transform="translate(381 259) rotate(0 -351 -195)">
 <rect x="0" y="0" width="26" height="26" rx="6" ry="6"/>
-<text class="tap" x="13" y="13">K_MUTE</text>
+<text class="tap" x="13" y="13">C_MUTE</text>
 </g>
 <g class="key keypos-47 " transform="translate(407 233) rotate(0 -377 -169)">
 <rect x="0" y="0" width="26" height="26" rx="6" ry="6"/>
@@ -707,7 +707,7 @@ svg.physical-layout { font-family: ui-monospace, SFMono-Regular, Consolas, monos
 </g>
 <g class="key keypos-50 " transform="translate(433 259) rotate(0 -403 -195)">
 <rect x="0" y="0" width="26" height="26" rx="6" ry="6"/>
-<text class="tap" x="13" y="13">K_MUTE</text>
+<text class="tap" x="13" y="13">C_MUTE</text>
 </g>
 <g class="key keypos-51 " transform="translate(485 259) rotate(0 -455 -195)">
 <rect x="0" y="0" width="26" height="26" rx="6" ry="6"/>
