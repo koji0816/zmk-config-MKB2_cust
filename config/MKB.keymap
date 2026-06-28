@@ -85,6 +85,20 @@
 
             label = "WIN_E";
         };
+
+        win_V: win_V {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_WIN>,
+                <&macro_tap>,
+                <&kp V>,
+                <&macro_release>,
+                <&kp LEFT_WIN>;
+
+            label = "WIN_V";
+        };
     };
 
     keymap {
@@ -150,7 +164,7 @@
             label = "Scr";
             bindings = <
 &trans    &trans  &kp F7     &kp F8    &kp F9     &kp F10      &kp LC(C)  &trans    &trans     &trans     &trans     &trans
-&trans    &trans  &kp F4     &kp F5    &kp F6     &kp F11      &kp LC(V)  &none     &none      &none      &trans     &trans
+&trans    &trans  &kp F4     &kp F5    &kp F6     &kp F11      &kp LC(V)  &win_V    &none      &none      &trans     &trans
 &trans    &trans  &kp F1     &kp F2    &kp F3     &kp F12      &Win_E     &trans    &trans     &trans     &trans     &trans
 &trans    &trans  &trans               &trans     &trans       &trans     &trans               &trans     &trans     &screenshot
 &kp LEFT  &kp UP  &kp SPACE  &kp DOWN  &kp RIGHT                          &kp HOME  &kp PG_UP  &kp ENTER  &kp PG_DN  &kp END
