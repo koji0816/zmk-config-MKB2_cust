@@ -107,12 +107,12 @@
         default_layer {
             label = "Def";
             bindings = <
-&kp LANG1                &kp Q     &kp W      &kp E     &kp R        &kp T            &kp Y               &kp U          &kp I      &kp O      &kp P      &kp BACKSPACE
-&lt BT TAB               &kp A     &kp S      &kp D     &kp F        &kp G            &kp H               &kp J          &kp K      &kp L      &kp MINUS  &kp ENTER
-&kp LSHFT                &kp Z     &kp X      &kp C     &kp V        &kp B            &kp N               &kp M          &kp COMMA  &kp DOT    &kp UP     &kp FSLH
-&mt LEFT_CONTROL ESCAPE  &kp LGUI  &kp LALT             &lt 1 LANG2  &lt 4 SPACE      &lt FUNC BACKSPACE  &lt NUM ENTER             &kp LEFT   &kp DOWN   &mt RIGHT_SHIFT RIGHT
-&kp LEFT                 &kp UP    &kp SPACE  &kp DOWN  &kp RIGHT                                         &kp HOME       &kp PG_UP  &kp ENTER  &kp PG_DN  &kp END
-                                              &kp A                                                                      &kp B
+&kp ESCAPE               &kp Q     &kp W      &kp E                      &kp R        &kp T                 &kp Y               &kp U          &kp I      &kp O      &kp P      &kp BACKSPACE
+&lt BT TAB               &kp A     &kp S      &kp D                      &kp F        &kp G                 &kp H               &kp J          &kp K      &kp L      &kp MINUS  &kp ENTER
+&kp LSHFT                &kp Z     &kp X      &kp C                      &kp V        &kp B                 &kp N               &kp M          &kp COMMA  &kp DOT    &kp UP     &kp FSLH
+&mt LEFT_CONTROL ESCAPE  &kp LGUI  &kp LALT                              &lt 1 SPACE  &lt 4 LANGUAGE_1      &lt FUNC BACKSPACE  &lt NUM ENTER             &kp LEFT   &kp DOWN   &mt RIGHT_SHIFT RIGHT
+&kp LEFT                 &kp UP    &kp SPACE  &kp DOWN                   &kp RIGHT                                              &kp HOME       &kp PG_UP  &kp ENTER  &kp PG_DN  &kp END
+                                              &mt LEFT_SHIFT LANGUAGE_2                                                                        &kp B
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
