@@ -31,6 +31,11 @@ include:
     snippet: Default zmk-usb-logging studio-rpc-usb-uart
     artifact-name: MKB_L_MODULE_KEY
 
+  - board: seeeduino_xiao_ble
+    shield: MKB_L_Base MKB_L_LPPS rgbled_adapter nice_oled
+    snippet: Default cdc-boot zmk-usb-logging
+    artifact-name: MKB_L_MODULE_LPPS
+
 # Right Shields
   - board: seeeduino_xiao_ble
     shield: MKB_R_Base MKB_R_TB rgbled_adapter nice_oled
@@ -66,6 +71,11 @@ include:
     shield: MKB_R_Base MKB_R_KEY rgbled_adapter nice_oled
     snippet: zmk-usb-logging studio-rpc-usb-uart
     artifact-name: MKB_R_MODULE_KEY
+
+  - board: seeeduino_xiao_ble
+    shield: MKB_R_Base MKB_R_LPPS rgbled_adapter nice_oled
+    snippet: cdc-boot zmk-usb-logging
+    artifact-name: MKB_R_MODULE_LPPS
 
 # Settings Reset
   - board: seeeduino_xiao_ble
